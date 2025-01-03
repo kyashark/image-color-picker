@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    margin:10px 0 0 0;
+    color: #0F1425;
+}
+
+img{
+    max-width:300px;
+    max-height:300px;
+    margin:20px;
+}
+
+.tab{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding:0 30px 30px;
+}
+
+
+.file-input {
+    display: none;
+  }
+
+  .file-label {
+    background-color: #0F1425;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .file-label:hover {
+        background-color: #141b31;
+        
+  }
+
+  input[type='button']{
+    background-color: #0F1425;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  input[type='button']:hover{
+    background-color: #141b31;
+  }
+
+
+
+.color-code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+section {
+    position: relative;
+    display: inline-block;
+  }
+
+input[type="text"] {
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    color: #333;
+    outline: none; 
+  }
+
+  i {
+    position: absolute;
+    left:90%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #cfd0d3;
+  }
+
+  button{
+    border-radius: 4px;
+    height: 87px;
+    border: 10px solid #f2f2f2;
+    background-color:rgb(77, 77, 240);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  
+/* lg */
+@media only screen and (max-width: 1024px){
+	.container{
+		width: 65%;
+  }
+}
+
+
+/*sm*/
+@media only screen and (max-width: 640px){
+	.container{
+			width: 75%;
+  }
+}
